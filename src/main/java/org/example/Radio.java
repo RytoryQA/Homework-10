@@ -49,7 +49,7 @@ public class Radio {
         if (newMaxChannel <= minChannel) {
             return;
         }
-        if (newMaxChannel > allChannel){
+        if (newMaxChannel > allChannel) {
             return;
         }
         this.maxChannel = newMaxChannel;
@@ -61,7 +61,8 @@ public class Radio {
         this.maxChannel = allChannel - 1;
 
     }
-    public Radio(){
+
+    public Radio() {
         this.allChannel = 10;
         this.minChannel = 0;
         this.maxChannel = 9;
@@ -113,7 +114,7 @@ public class Radio {
 
         setVolume(upVolume);
         if (upVolume > maxVolume) {
-           volume = maxVolume;
+            volume = maxVolume;
         }
     }
 

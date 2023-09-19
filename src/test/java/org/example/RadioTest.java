@@ -75,6 +75,7 @@ public class RadioTest {
 
         Assertions.assertEquals(29, radio.getMaxChannel());
     }
+
     @Test
     public void testReturnSetMaxChannelIfNull() {
 
@@ -82,13 +83,15 @@ public class RadioTest {
 
         Assertions.assertEquals(29, radio.getMaxChannel());
     }
+
     @Test
-    public void testReturnIfMaxChannelAboveAllChannel(){
+    public void testReturnIfMaxChannelAboveAllChannel() {
         radio.setMaxChannel(54);
         Assertions.assertEquals(29, radio.getMaxChannel());
     }
+
     @Test
-    public void wtf(){ // переименовать
+    public void testMaxChannelValidValue() {
         radio.setMaxChannel(6);
         Assertions.assertEquals(6, radio.getMaxChannel());
     }
@@ -202,7 +205,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testRadio2(){
+    public void testRadio2() {
         Radio radio = new Radio();
 
         Assertions.assertEquals(10, radio.getAllChannel());
